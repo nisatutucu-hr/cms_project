@@ -6,10 +6,15 @@
 <script src="<?php echo base_url() ?>/libs/bower/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
 <script src="<?php echo base_url() ?>/libs/bower/PACE/pace.min.js"></script>
 
+<!-- 
 <script src="<?php echo base_url() ?>/assets/js/library.js"></script>
+-->
+<?php $this->load->view('includes/library.php');  ?>
 <script src="<?php echo base_url() ?>/assets/js/plugins.js"></script>
 <script src="<?php echo base_url() ?>/assets/js/app.js"></script>
 
 <script src="<?php echo base_url() ?>/libs/bower/moment/moment.js"></script>
 <script src="<?php echo base_url() ?>/libs/bower/fullcalendar/dist/fullcalendar.min.js"></script>
 <script src="<?php echo base_url() ?>/assets/js/fullcalendar.js"></script>
+
+<script src="<?php echo base_url() ?>/assets/js/custom.js"></script>
