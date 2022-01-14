@@ -1,10 +1,10 @@
 <div class="col-md-12">
     <div class="widget p-lg">
         <h4 class="m-b-lg">Product list
-            <button type="button" class="btn btn-success pull-right btn-outline btn-sm">
+            <a href="<?php echo base_url("product/create") ?>" type="button" class="btn btn-success pull-right btn-outline btn-sm">
                 <i class="fa fa-plus"></i>
                 Add
-            </button>
+            </a>
         </h4>
 
 
@@ -19,9 +19,9 @@
                 <th>action</th>
             </thead>
 
-            <tbody>
+            <tbody class="sortable" data-url="<?php echo base_url('product/rankSetter') ?>">
                 <?php foreach ($items as $item) { ?>
-                    <tr>
+                    <tr id='order-<?php echo $item->id ?>'>
                         <td><?php echo $item->id ?></td>
                         <td><?php echo $item->createdAt ?></td>
                         <td><?php echo $item->url ?></td>
@@ -34,9 +34,9 @@
                             <button class="btn btn-dark btn-sm">
                                 <i class="fa fa-edit"></i>
                                 edit</button>
-                            <button class="btn btn-danger btn-sm">
+                            <a href="#" data-url="<?php echo base_url("product/delete/{$item->id}") ?>" class="btn btn-danger btn-sm remove-btn">
                                 <i class="fa fa-trash"></i>
-                                delete</button>
+                                delete</a>
                         </td>
                     </tr>
                 <?php } ?>

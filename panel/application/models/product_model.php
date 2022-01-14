@@ -16,10 +16,11 @@ class Product_model extends CI_Model
             ->row();
     }
 
-    public function get_all(array $where = [])
+    public function get_all(array $where = [], String $order_by = 'id ASC')
     {
         return $this->db
             ->where($where)
+            ->order_by($order_by)
             ->get($this->tableName)
             ->result();
     }

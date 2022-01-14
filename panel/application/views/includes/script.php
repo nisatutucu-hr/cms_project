@@ -17,4 +17,5 @@
 <script src="<?php echo base_url() ?>/libs/bower/fullcalendar/dist/fullcalendar.min.js"></script>
 <script src="<?php echo base_url() ?>/assets/js/fullcalendar.js"></script>
 
+<script src="<?php echo base_url() ?>/assets/js/sweetalert2.all.min.js"></script>
 <script src="<?php echo base_url() ?>/assets/js/custom.js"></script>
