@@ -16,7 +16,9 @@
         <div class="wrap">
             <section class="app-content">
 
-                <?php $this->load->view("{$viewFolder}/{$subViewFolder}/content"); ?>
+                <?php $this->load->view(
+                    "{$viewFolder}/{$subViewFolder}/content"
+                ); ?>
 
             </section>
         </div>
